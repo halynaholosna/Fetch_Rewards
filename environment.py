@@ -5,6 +5,8 @@ from selenium.webdriver.support.wait import WebDriverWait
 from features.application import Application
 from features.logger import *
 
+from logger import MyListener
+
 
 def browser_init(context):
     context.driver = EventFiringWebDriver(webdriver.Chrome(), MyListener())
