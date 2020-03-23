@@ -23,7 +23,7 @@ Feature: Tests for Open Positions paths
     And Click View Jobs button
     Then Verify Current Job Openings is present on the page
 
-  Scenario: User can get to the career page from About Us page by clicking View Jobs button
+  Scenario: User can get to the career page from About Us Header link by clicking View Jobs button
     Given Open Fetch Rewards aboutUs.jsp page
     When Click View Jobs button
     Then Verify Current Job Openings is present on the page
