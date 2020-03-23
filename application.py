@@ -1,7 +1,7 @@
 from pages.about_us_page import AboutUs
 from pages.base_page import Page
 from pages.footer import Footer
-from pages.open_positions_page import OpenPositions
+from pages.career_page import OpenPositions
 from pages.referrals_page import Referrals
 
 

@@ -2,7 +2,7 @@
 
 Feature: Tests for Open Positions paths
 
-  Scenario Outline: User can get to Open Positions page by clicking on Open Positions Footer link
+  Scenario Outline: User can get to the career page by clicking on Open Positions Footer link
     Examples:
     |url            |
     |main           |
@@ -17,13 +17,13 @@ Feature: Tests for Open Positions paths
     When Click on Open Positions link
     Then Verify Current Job Openings is present on the page
 
-  Scenario: User can get to the Open Positions page from About Us page by clicking View Jobs button
-    Given Open Fetch Rewards aboutUs.jsp page
-    When Click View Jobs button
-    Then Verify Current Job Openings is present on the page
-
-  Scenario: User can get to the Open Positions page from Main Page via About Us page
+  Scenario: User can get to the career page from Main Page via About Us Footer link
     Given Open Fetch Rewards main page
     When Click on About Us link
     And Click View Jobs button
+    Then Verify Current Job Openings is present on the page
+
+  Scenario: User can get to the career page from About Us page by clicking View Jobs button
+    Given Open Fetch Rewards aboutUs.jsp page
+    When Click View Jobs button
     Then Verify Current Job Openings is present on the page
